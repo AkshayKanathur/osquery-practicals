@@ -7,14 +7,8 @@ from process_open_sockets
 where remote_address != '' and state = 'ESTABLISHED';
 ```
 
-### Output
-```
-| local_address  | local_port | remote_address  | remote_port | state       |
-|----------------|------------|-----------------|-------------|-------------|
-| 172.17.222.219 | 60908      | 164.132.23.184  | 443         | ESTABLISHED |
-| 172.17.222.219 | 37010      | 62.141.37.218   | 443         | ESTABLISHED |
-| 172.17.222.219 | 40316      | 54.37.80.38     | 9700        | ESTABLISHED |
-```
+### Screenshot
+![screenshot](./screenshot.png)
 
 ### What It Does
 Queries `process_open_sockets` to show all currently active outbound TCP connections with their source/destination IPs and ports.

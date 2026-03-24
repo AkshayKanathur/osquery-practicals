@@ -9,17 +9,8 @@ select uid, name, path from processes where name like '%nmap%';
 select uid, name, path from processes where name like '%osquery%';
 ```
 
-### Output
-```
--- nmap: no results (not running)
-
--- osquery:
-| uid  | name      | path                        |
-|------|-----------|-----------------------------|
-| 0    | osqueryd  |                             |
-| 0    | osqueryd  |                             |
-| 1000 | osqueryi  | /opt/osquery/bin/osqueryd   |
-```
+### Screenshot
+![screenshot](./screenshot.png)
 
 ### Blue Team Relevance
 - Confirm whether a **suspected malicious process** is actively running

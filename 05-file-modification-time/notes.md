@@ -7,12 +7,8 @@ from file
 where path like '/usr/bin/nma%' or path like '/usr/lib/%nmap%';
 ```
 
-### Output
-```
-| path          | modified_time       |
-|---------------|---------------------|
-| /usr/bin/nmap | 2024-04-01 06:58:48 |
-```
+### Screenshot
+![screenshot](./screenshot.png)
 
 ### What It Does
 Pulls the last modification timestamp of a binary from the `file` table using Unix epoch conversion.

@@ -11,12 +11,8 @@ osqueryi --version
 osqueryi
 ```
 
-### Output
-```
-osqueryi version 5.22.1
-Using a virtual database. Need help, type '.help'
-osquery>
-```
+### Screenshot
+![screenshot](./screenshot.png)
 
 ### Notes
 - `osqueryi` is the interactive shell (like a SQL prompt for your OS)

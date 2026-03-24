@@ -12,20 +12,8 @@ order by uid desc;
 select * from logged_in_users where user = 'akshay';
 ```
 
-### Output
-```
--- Users:
-| username | uid   | gid   | description | directory     | shell           |
-|----------|-------|-------|-------------|---------------|-----------------|
-| nobody   | 65534 | 65534 | nobody      | /nonexistent  | /usr/sbin/nologin |
-| akshay   | 1000  | 1000  |             | /home/akshay  | /usr/bin/fish   |
-
--- Logged in users:
-| type | user   | tty   | host | time       | pid  |
-|------|--------|-------|------|------------|------|
-| user | akshay | pts/1 |      | 1774335989 | 401  |
-| user | akshay | pts/2 |      | 1774338929 | 7862 |
-```
+### Screenshot
+![screenshot](./screenshot.png)
 
 ### Blue Team Relevance
 - Detect **newly created user accounts** (common persistence method)
